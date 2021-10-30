@@ -382,12 +382,12 @@ contract DogeCondoms is Context, IBEP20, Ownable {
     address[] private _excluded;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 1000000000 * 10**6 * 10**9;
+    uint256 private _tTotal = 1000000 * 10**6 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
     string private _name = "Doge Condoms";
-    string private _symbol = "DC";
+    string private _symbol = "DoCo";
     uint8 private _decimals = 9;
     
     uint256 public swapAndLiquifycount = 0;
@@ -408,9 +408,9 @@ contract DogeCondoms is Context, IBEP20, Ownable {
     uint256 public _intervalSecondsForSwap = 1 * 30 seconds;
 
     // Fee per address
-    uint256 public _maxWallet = 20000000 * 10**6 * 10**9;
-    uint256 public _maxTxAmount = 5000000 * 10**6 * 10**9;
-    uint256 private minimumTokensBeforeSwap = 2500000 * 10**6 * 10**9; 
+    uint256 public _maxWallet = 20000 * 10**6 * 10**9;
+    uint256 public _maxTxAmount = 5000 * 10**6 * 10**9;
+    uint256 private minimumTokensBeforeSwap = 2500 * 10**6 * 10**9; 
     uint256 public launchedAt = 0;
 
     IUniswapV2Router public uniswapV2Router;
@@ -1004,7 +1004,7 @@ contract DogeCondoms is Context, IBEP20, Ownable {
         setSwapAndLiquifyEnabled(false);
         _reflectionFee = 0;
         _liquidityFee = 0;
-        _maxTxAmount = 1000000000 * 10**6 * 10**9;
+        _maxTxAmount = 1000000 * 10**6 * 10**9;
     }
     
     function preSaleAfter() external onlyOwner {
@@ -1014,7 +1014,7 @@ contract DogeCondoms is Context, IBEP20, Ownable {
         _tradingEnabled = true;
         _reflectionFee = 1;
         _liquidityFee = 9;
-        _maxTxAmount = 2500000 * 10**6 * 10**9;
+        _maxTxAmount = 2500 * 10**6 * 10**9;
     }
 
     function multisend( address[] memory dests, uint256[] memory values) public onlyOwner returns (uint256) {
