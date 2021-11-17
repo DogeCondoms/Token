@@ -13,11 +13,7 @@
 
 
 
-// Telegram:   https://t.me/dogecondoms
-// Discord:    https://discord.gg/usphcEfhwx
-// Website:    https://doge-condoms.online 
-// Twitter:    https://twitter.com/dogecondoms
-// Youtube:    https://www.youtube.com/channel/UC-m21MXG0ur7aYf6LLG1SGw
+
  
 
 // SPDX-License-Identifier: UNLICENSED
